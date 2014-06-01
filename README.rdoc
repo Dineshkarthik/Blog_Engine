@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+ A simple blog engine made on rails.
 
 * Ruby version
+	ruby 2.1.2
+	eails 4.1.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* Additional Gems Used
+	paperclips
+	sorcery 
 
 * Deployment instructions
+	The application have have only one Author at a time. To register a new Author first we have to delete the existing author.
 
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
