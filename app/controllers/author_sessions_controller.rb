@@ -13,7 +13,8 @@ class AuthorSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:authors, message: 'Logged out!')
+    render action: :new
   end
+
 
 end
