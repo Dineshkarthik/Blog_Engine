@@ -1,5 +1,6 @@
 <%= form_for(@article, html: {multipart: true}) do |f| %>
 
+
   <ul>
   <% @article.errors.full_messages.each do |error| %>
     <li><%= error %></li>
@@ -9,9 +10,10 @@
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </p>
+ 
   <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
+    <%= f.label :body %> 
+    <%= f.text_area :body, :id=>"myArea2" %>
   </p>
   <p>
   <% if @article.image.exists? %>
